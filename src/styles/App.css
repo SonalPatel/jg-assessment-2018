@@ -1,0 +1,68 @@
+html {
+  cursor: default;
+  /* 1 */
+  -ms-overflow-style: scrollbar;
+  /* 2 */ }
+
+/**
+   * A very simple reset.
+   */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+li > ol,
+li > ul {
+  margin-bottom: 0; }
+
+/* I would usually make this my import file,
+  but as this is one page I have skipped this step. 
+  i would also set my breakpoints and grid BETTER for a larger project. Here i have opted to use flexbox for speed and simplicity.
+*/
+.testing-sass {
+  color: #ac29b5; }
+
+/* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
