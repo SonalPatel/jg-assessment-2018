@@ -165,6 +165,22 @@ a.brand {
 a.links {
   color: #737373; }
 
+/* testing links*/
+.animate-link {
+  display: inline-block;
+  text-decoration: none; }
+
+.animate-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ac29b5;
+  transition: width 0.3s; }
+
+.animate-link:hover::after {
+  width: 100%; }
+
 footer {
   padding: 1rem;
   background: #ffffff;

@@ -92,6 +92,27 @@ a.links {
   color: $color-empress;
 }
 
+/* testing links*/
+.animate-link {
+  display: inline-block;
+  //color: #000;
+  text-decoration: none;
+}
+
+.animate-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: $color-brand-primary;
+  transition: width 0.3s;
+}
+
+.animate-link:hover::after {
+  width: 100%;
+  //transition: width .3s;
+}
+
 footer {
   padding: 1rem;
   background: $color-white;

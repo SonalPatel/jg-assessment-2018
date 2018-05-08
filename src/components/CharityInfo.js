@@ -82,7 +82,10 @@ class CharityInfo extends React.Component {
               </li>
               <li>
                 {" "}
-                <a href={charityContent.profilePageUrl}>
+                <a
+                  className="animate-link"
+                  href={charityContent.profilePageUrl}
+                >
                   Find out more about {charityContent.name}{" "}
                 </a>
               </li>

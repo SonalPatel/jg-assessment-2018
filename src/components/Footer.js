@@ -9,14 +9,14 @@ class Footer extends React.Component {
             <p>
               Visit JustGiving to{" "}
               <a
-                className="brand"
+                className="animate-link"
                 href="https://www.justgiving.com/fundraising"
               >
                 start fundraising for a charity
               </a>{" "}
               or{" "}
               <a
-                className="brand"
+                className="animate-link"
                 href="https://www.justgiving.com/crowdfunding"
               >
                 start crowdfunding for cause you believe in
