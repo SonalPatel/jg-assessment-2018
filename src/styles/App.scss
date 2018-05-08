@@ -14,7 +14,6 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   padding: 0.3rem 0.3rem 0.3rem 2rem;
   .jg-logo-container {
-    border: 1px solid blue;
     display: inline-block;
     height: 65px; // TO DO make this responsive
     width: 65px;
@@ -34,12 +33,10 @@ header {
 /*charity module */
 .content-info {
   .charity-wrapper {
-    border: 1px solid pink;
     display: inline-block;
     margin-bottom: 3rem;
 
     .charity-logo-wrap {
-      border: 1px solid blue;
       width: 250px; // TO DO make this responsive ********************
       height: 100px;
       vertical-align: middle;
@@ -53,7 +50,6 @@ header {
       .charity-logo {
         width: 100%;
         height: auto;
-        //height: auto;
       }
     }
   }
@@ -64,7 +60,6 @@ header {
   }
   ul {
     margin-top: 1.5rem;
-    border: 1px solid red;
   }
   li {
     color: $color-empress;
