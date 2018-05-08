@@ -7,7 +7,7 @@ class Donations extends React.Component {
     this.state = {
       error: null,
       isLoaded: false,
-      donations: [] //my donations empty array
+      content: [] //my donations empty object
     };
   }
 
@@ -42,7 +42,7 @@ class Donations extends React.Component {
   }
 
   render() {
-    const { error, isLoaded, donations } = this.state;
+    const { error, isLoaded, content } = this.state;
     //checkif there are any errors,  {error.message} is part of react
     if (error) {
       return <div>Error: {error.message} </div>;
@@ -51,7 +51,7 @@ class Donations extends React.Component {
       return (
         <div className="brand-primary">
           Loading latest donation details..<span
-            class="fas fa-spinner"
+            className="fas fa-spinner"
             aria-hidden="true"
           />
         </div>
@@ -64,33 +64,28 @@ class Donations extends React.Component {
           <h2>
             {" "}
             <span className=" brand-primary">
-              <span class="fas fa-hand-holding-heart" aria-hidden="true" />
+              <span className="fas fa-hand-holding-heart" aria-hidden="true" />
             </span>{" "}
             Latest charity donations
           </h2>
           <ul>
-            {donations.map(donation => (
+            {content.donations.map(donation => (
               <li className="x" key={donation.name}>
-                <h3>{donation.donorDisplayName}</h3>{" "}
-                <p>
-                  <span>{donation.donorLocalCurrencyCode}</span>{" "}
-                  <strong>{donation.donorLocalAmount}</strong>{" "}
-                </p>
-                <p>{donation.message} </p>
-                <p>
-                  <span>{donation.donationDate} </span>
-                </p>
-                <p>
+                <h3>
+                  {" "}
                   <span className="avatar-wrap">
-                    <img className="avatar" scr={donation.imageUrl} alt="" />
+                    <img className="avatar" src={donation.imageUrl} alt="" />
                   </span>{" "}
-                  {/* image not rendering just the url */}
-                </p>{" "}
+                  {donation.donorDisplayName}{" "}
+                </h3>
                 <p>
                   <span className="brand-primary">
-                    <span class="far fa-comment" aria-hidden="true" />
+                    <span className="far fa-comment" aria-hidden="true" />
                   </span>{" "}
-                  {donation.description}
+                  {donation.message}{" "}
+                </p>
+                <p>
+                  {donation.currencyCode} <strong>{donation.amount}</strong>{" "}
                 </p>
               </li>
             ))}
