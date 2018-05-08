@@ -1,3 +1,51 @@
-//import the mixins for font sizes
+@import "_mixins.scss";
 
-//to do  create font size variables and media queries for Responsive fonts
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  //font-style: normal;
+  font-weight: 100;
+  color: $color-nero;
+  background: $color-very-light-grey;
+}
+
+/* font-size variables*/
+$font-size-xs: 11px;
+$font-size-s: 14px;
+$font-size-m: 16px;
+$font-size-l: 18px;
+$font-size-xl: 24px;
+
+/*Resizing font sizes at different resolutions (mobile first)*/
+
+html {
+  // Smallest resolutions
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 1rem;
+    @include font-size($font-size-s);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 11rem;
+    @include font-size($font-size-m);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 12rem;
+    @include font-size($font-size-m);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 12rem;
+    @include font-size($font-size-xl);
+  }
+}

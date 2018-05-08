@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./styles/App.css";
 import Header from "./components/Header.js";
 import WrapContainer from "./containers/WrapContainer.js";
@@ -10,9 +9,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-
         <WrapContainer />
-
         <Footer />
       </div>
     );

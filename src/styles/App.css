@@ -51,6 +51,41 @@ li > ul {
 .color-dark-grey {
   color: #737373; }
 
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #262626;
+  background: #f9f9f9; }
+
+/* font-size variables*/
+/*Resizing font sizes at different resolutions (mobile first)*/
+html {
+  font-size: 1rem; }
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 1rem;
+    font-size: 14px;
+    font-size: 0.875rem; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 11rem;
+    font-size: 16px;
+    font-size: 1rem; } }
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 12rem;
+    font-size: 16px;
+    font-size: 1rem; } }
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 12rem;
+    font-size: 24px;
+    font-size: 1.5rem; } }
+
 .off-screen {
   height: 1px;
   left: -50000px;
@@ -91,12 +126,16 @@ h1 {
 h2 {
   color: #262626;
   padding-bottom: 1.2rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-size: 1.2rem;
   font-weight: 100; }
 
 h3 {
   color: #262626;
   padding-bottom: 0.5rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-size: 1rem;
   font-weight: 100; }
 
@@ -223,6 +262,41 @@ footer {
   margin: 0 0 1em 0; }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #262626;
+  background: #f9f9f9; }
+
+/* font-size variables*/
+/*Resizing font sizes at different resolutions (mobile first)*/
+html {
+  font-size: 1rem; }
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 1rem;
+    font-size: 14px;
+    font-size: 0.875rem; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 11rem;
+    font-size: 16px;
+    font-size: 1rem; } }
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 12rem;
+    font-size: 16px;
+    font-size: 1rem; } }
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 12rem;
+    font-size: 24px;
+    font-size: 1.5rem; } }
+
 /* I would usually make this my import file,
   but as this is one page I have skipped this step. 
   i would also set my breakpoints and grid BETTER for a larger project. Here i have opted to use flexbox for speed and simplicity.
@@ -281,30 +355,37 @@ header {
     padding-top: 0.5rem; }
 
 /* donations module*/
-.donations-wrapper {
-  background: aqua; }
-  .donations-wrapper ul {
-    margin-left: 0; }
-    .donations-wrapper ul li {
-      padding: 0.3rem 0;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-      background: #f5f5f5;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      border-radius: 5px; }
-  .donations-wrapper p {
-    margin-top: 0; }
-  .donations-wrapper h3 {
-    display: inline;
-    padding: 2rem 0 0 0;
-    font-weight: 300; }
-  .donations-wrapper .avatar {
-    border: 2px solid #ffffff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; }
+.donations-wrapper ul {
+  margin-left: 0;
+  padding-left: 0; }
+  .donations-wrapper ul li {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: #f5f5f5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+
+.donations-wrapper p {
+  margin-top: 0; }
+
+.donations-wrapper h3 {
+  display: inline;
+  padding: 2rem 0 0 0;
+  font-weight: 400; }
+
+.donations-wrapper .avatar {
+  border: 2px solid #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
+
+.layered-paper {
+  background: #fbfcfc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+  /* The third layer shadow */
+  padding: 1rem; }
 
 /* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
 @keyframes App-logo-spin {
