@@ -66,7 +66,7 @@ class Donations extends React.Component {
             <span className=" brand-primary">
               <span className="fas fa-hand-holding-heart" aria-hidden="true" />
             </span>{" "}
-            Latest charity donations
+            Latest donations
           </h2>
           <ul>
             {content.donations.map(donation => (

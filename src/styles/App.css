@@ -89,7 +89,7 @@ a.skip-link:hover {
   height: auto;
   overflow: visible; }
 
-/* to do - style up elements here links, headings, lists etc */
+/* to do - FIX FLEX images, style up elements here links, headings, lists etc */
 .img-fluid {
   max-width: 100%;
   height: auto; }
@@ -125,7 +125,7 @@ footer {
   background: #ffffff; }
 
 .flex-grid-two-unequal {
-  background: #ffffff;
+  background: #f9f9f9;
   padding: 1em;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -191,39 +191,55 @@ header {
       width: 100%; }
 
 /*charity module */
-.content-info .charity-wrapper {
-  border: 1px solid pink;
-  display: inline-block;
-  margin-bottom: 3rem; }
-  .content-info .charity-wrapper .charity-logo-wrap {
-    border: 1px solid blue;
-    width: 250px;
-    height: 100px;
-    vertical-align: middle;
+.content-info {
+  /* TO DO - style up content here p tags, links, list and h1, make the logo responsive, line up the content with the start og the JG logo if time. 
+   for loading text - if time add an animated spinner*/ }
+  .content-info .charity-wrapper {
+    border: 1px solid pink;
     display: inline-block;
-    zoom: 1;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-rendering: auto;
-    line-height: 45px;
-    margin-right: 2rem; }
-    .content-info .charity-wrapper .charity-logo-wrap .charity-logo {
-      width: 100%;
-      height: auto; }
+    margin-bottom: 3rem; }
+    .content-info .charity-wrapper .charity-logo-wrap {
+      border: 1px solid blue;
+      width: 250px;
+      height: 100px;
+      vertical-align: middle;
+      display: inline-block;
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      text-rendering: auto;
+      line-height: 45px;
+      margin-right: 2rem; }
+      .content-info .charity-wrapper .charity-logo-wrap .charity-logo {
+        width: 100%;
+        height: auto; }
+  .content-info h1 {
+    border: 1px solid aqua;
+    text-align: center;
+    display: inline; }
+  .content-info ul {
+    margin-top: 1.5rem;
+    border: 1px solid red; }
+  .content-info li {
+    color: #737373;
+    font-size: 1rem;
+    padding-top: 0.5rem; }
 
-.content-info h1 {
-  border: 1px solid aqua;
-  text-align: center;
-  display: inline; }
-
-.content-info ul {
+/* donations module*/
+.donations-wrapper li {
+  padding-bottom: 0.7rem;
   margin-top: 1.5rem;
-  border: 1px solid red; }
+  margin-bottom: 1.5rem;
+  background: #f5f5f5; }
 
-.content-info li {
-  color: #737373;
-  font-size: 1rem;
-  padding-top: 0.5rem; }
+.donations-wrapper p {
+  margin-top: 0; }
+
+.donations-wrapper .avatar {
+  border: 1px solid red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
 
 /* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
 @keyframes App-logo-spin {
