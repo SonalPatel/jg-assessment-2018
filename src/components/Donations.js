@@ -5,7 +5,9 @@ class Donations extends React.Component {
     return (
       <div>
         <h2>charity donations go here </h2>
-        <p className="testing-sass-again"> make this a list</p>
+        <p className="testing-sass-again">
+          MyComponent for donations goes here: make this a list
+        </p>
       </div>
     );
   }

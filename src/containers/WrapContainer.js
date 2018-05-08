@@ -1,5 +1,5 @@
 import React from "react";
-import Charityinfo from "../components/CharityInfo.js";
+import CharityInfo from "../components/CharityInfo.js";
 import Donations from "../components/Donations.js";
 
 class WrapContainer extends React.Component {
@@ -7,10 +7,12 @@ class WrapContainer extends React.Component {
     return (
       <div className="flex-grid-two-unequal">
         <div className="col-one">
-          MyComponent for charity (oxfam: 13441) info goeshere
+          <CharityInfo />
         </div>
 
-        <div className="col-two">MyComponent for donations goes here</div>
+        <div className="col-two">
+          <Donations />
+        </div>
       </div>
     );
   }

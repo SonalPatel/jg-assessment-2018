@@ -10,13 +10,27 @@
   i would also set my breakpoints and grid BETTER for a larger project. Here i have opted to use flexbox for speed and simplicity.
 */
 
-.testing-sass {
-  color: $color-brand-primary;
+header {
+  padding: 0.3rem 0.3rem 0.3rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  .jg-logo-container {
+    width: 65px;
+    height: 65px;
+    vertical-align: middle;
+    display: inline-block;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;
+    line-height: 45px;
+    border: 1px solid red;
+    .jg-logo {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
-.testing-sass-again {
-  color: $color-empress;
-}
 /* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
 
 @keyframes App-logo-spin {

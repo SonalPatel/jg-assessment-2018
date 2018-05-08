@@ -3,8 +3,27 @@ import React from "react";
 class Footer extends React.Component {
   render() {
     return (
-      <div>
-        <p className="testing-sass-again"> The footer goes here</p>
+      <div className="flex-grid mt">
+        <div className="col">
+          <footer id="footer-content" role="contentinfo">
+            <p>
+              Visit JustGiving to{" "}
+              <a
+                className="brand"
+                href="https://www.justgiving.com/fundraising"
+              >
+                start fundraising for a charity
+              </a>{" "}
+              or{" "}
+              <a
+                className="brand"
+                href="https://www.justgiving.com/crowdfunding"
+              >
+                start crowdfunding for cause you believe in
+              </a>.{" "}
+            </p>
+          </footer>
+        </div>
       </div>
     );
   }
