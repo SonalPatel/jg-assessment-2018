@@ -71,13 +71,18 @@ class Donations extends React.Component {
           <ul>
             {content.donations.map(donation => (
               <li className="x" key={donation.name}>
-                <h3>
-                  {" "}
-                  <span className="avatar-wrap">
-                    <img className="avatar" src={donation.imageUrl} alt="" />
-                  </span>{" "}
-                  {donation.donorDisplayName}{" "}
-                </h3>
+                <div className="flex-grid-two-unequal-small">
+                  <div className="col-one-small">
+                    <h3> {donation.donorDisplayName} </h3>
+                  </div>
+
+                  <div className="col-two-small">
+                    <span className="avatar-wrap">
+                      <img className="avatar" src={donation.imageUrl} alt="" />
+                    </span>
+                  </div>
+                </div>
+
                 <p>
                   <span className="brand-primary">
                     <span className="far fa-comment" aria-hidden="true" />

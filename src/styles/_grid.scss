@@ -11,18 +11,27 @@
 }
 
 %flex-grid-two {
-  background: $color-very-light-grey;
-  padding: 1em;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  background: $color-white;
   overflow: auto;
   word-wrap: break-word;
-  margin-bottom: 2rem;
+  justify-content: space-between;
 }
 
 .flex-grid-two-unequal {
   display: flex;
-  justify-content: space-between;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  padding: 1em;
+  margin-bottom: 2rem;
+
+  @extend %flex-grid-two;
+}
+.flex-grid-two-unequal-small {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  background: $color-white-smoke;
   @extend %flex-grid-two;
 }
 .col-one {
@@ -33,6 +42,17 @@
 .col-two {
   width: 40%;
   border: 1px solid pink;
+}
+.col-one-small {
+  width: 70%;
+  border: 1px solid blue;
+  background: $color-white-smoke;
+}
+
+.col-two-small {
+  width: 15%;
+  border: 1px solid pink;
+  background: $color-white-smoke;
 }
 
 /* smaller screens*/ /* TO TEST THIS SONAL */

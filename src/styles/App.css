@@ -124,18 +124,25 @@ footer {
   flex: 1;
   background: #ffffff; }
 
-.flex-grid-two-unequal {
-  background: #f9f9f9;
-  padding: 1em;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+.flex-grid-two-unequal, .flex-grid-two-unequal-small {
+  background: #ffffff;
   overflow: auto;
   word-wrap: break-word;
-  margin-bottom: 2rem; }
+  justify-content: space-between; }
 
 .flex-grid-two-unequal {
   display: flex;
-  justify-content: space-between; }
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  padding: 1em;
+  margin-bottom: 2rem; }
+
+.flex-grid-two-unequal-small {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  background: #f5f5f5; }
 
 .col-one {
   width: 55%;
@@ -144,6 +151,16 @@ footer {
 .col-two {
   width: 40%;
   border: 1px solid pink; }
+
+.col-one-small {
+  width: 70%;
+  border: 1px solid blue;
+  background: #f5f5f5; }
+
+.col-two-small {
+  width: 15%;
+  border: 1px solid pink;
+  background: #f5f5f5; }
 
 /* smaller screens*/
 /* TO TEST THIS SONAL */
@@ -235,8 +252,11 @@ header {
 .donations-wrapper p {
   margin-top: 0; }
 
+.donations-wrapper h3 {
+  display: inline; }
+
 .donations-wrapper .avatar {
-  border: 1px solid red;
+  border: 2px solid #ffffff;
   width: 50px;
   height: 50px;
   border-radius: 50%; }
