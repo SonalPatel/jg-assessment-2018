@@ -50,7 +50,9 @@ class CharityInfo extends React.Component {
       //if its true that is has loaded then show the text loading
       return (
         <div className="brand-primary">
-          <p className="loading-spinner">Loading charity content...</p>
+          <p>
+            Loading charity content...<span className="loading-spinner" />
+          </p>
         </div>
       ); //if time add an animated spinner
     } else {

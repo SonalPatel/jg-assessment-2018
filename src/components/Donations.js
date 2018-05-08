@@ -50,7 +50,9 @@ class Donations extends React.Component {
       //if its true that is has loaded then show the text loading...
       return (
         <div className="brand-primary">
-          <p className="loading-spinner">Loading latest donation details...</p>
+          <p>
+            Loading latest donation details...<span className="loading-spinner" />
+          </p>
         </div>
       );
     } else {

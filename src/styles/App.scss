@@ -110,13 +110,3 @@ header {
 .layered-paper {
   @include layered-paper;
 }
-/* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
