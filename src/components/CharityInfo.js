@@ -61,10 +61,10 @@ class CharityInfo extends React.Component {
             <h1>{charityContent.name}</h1>
           </div>
 
-          <p>
+          <h2>
             {charityContent.name} {charityContent.impactStatementWhat} to{" "}
             {charityContent.impactStatementWhy}
-          </p>
+          </h2>
 
           <p>{charityContent.description}</p>
 
