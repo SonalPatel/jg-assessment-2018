@@ -1,0 +1,36 @@
+@import "_colours.scss";
+
+/* very simple flexbox grid */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-grid .col {
+  flex: 1;
+  background: $color-white;
+}
+
+%flex-grid-two {
+  background: $color-white;
+  padding: 1em;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  overflow: auto;
+  word-wrap: break-word;
+  margin-bottom: 2rem;
+}
+
+.flex-grid-two-unequal {
+  display: flex;
+  justify-content: space-between;
+  @extend %flex-grid-two;
+}
+.col-one {
+  width: 55%;
+  border: 1px solid aqua;
+}
+
+.col-two {
+  width: 40%;
+  border: 1px solid pink;
+}
