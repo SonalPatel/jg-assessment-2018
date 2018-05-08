@@ -75,6 +75,23 @@ header {
    for loading text - if time add an animated spinner*/
 }
 
+/* donations module*/
+.donations-wrapper li {
+  padding-bottom: 0.7rem;
+  margin-bottom: 1.5rem;
+  background: $color-white-smoke;
+  @include border-radius(5px);
+  p {
+    margin-top: 0;
+  }
+}
+.avatar {
+  border: 1px solid red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
 /* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
 
 @keyframes App-logo-spin {
