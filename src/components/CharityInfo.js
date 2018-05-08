@@ -46,7 +46,7 @@ class CharityInfo extends React.Component {
       return <div className="brand-primary">Loading charity content...</div>; //if time add an animated spinner
     } else {
       // returns the content from the api and then iterates over each object to allow me access to the info
-      //(hit is my varibale name for the instance of each index defined in the settings at the top);
+      //(charityContent is my varibale name for my empty array );
       return (
         <div className="content-info" id="content" role="main">
           <div className="charity-wrapper">
@@ -68,19 +68,21 @@ class CharityInfo extends React.Component {
 
           <p>{charityContent.description}</p>
 
-          <ul className="list-items">
-            <li>Contact us at: {charityContent.emailAddress}</li>
-            <li>
-              {charityContent.name} registered charity number:{" "}
-              {charityContent.id}
-            </li>
-            <li>
-              {" "}
-              <a href={charityContent.profilePageUrl}>
-                Find out more about {charityContent.name}{" "}
-              </a>
-            </li>
-          </ul>
+          <aside role="complementary">
+            <ul className="list-items">
+              <li>Contact us at: {charityContent.emailAddress}</li>
+              <li>
+                {charityContent.name} registered charity number:{" "}
+                {charityContent.id}
+              </li>
+              <li>
+                {" "}
+                <a href={charityContent.profilePageUrl}>
+                  Find out more about {charityContent.name}{" "}
+                </a>
+              </li>
+            </ul>
+          </aside>
         </div>
       );
     }
