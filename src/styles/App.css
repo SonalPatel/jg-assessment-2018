@@ -154,12 +154,10 @@ footer {
 
 .col-one-small {
   width: 70%;
-  border: 1px solid blue;
   background: #f5f5f5; }
 
 .col-two-small {
   width: 15%;
-  border: 1px solid pink;
   background: #f5f5f5; }
 
 /* smaller screens*/
@@ -244,16 +242,18 @@ header {
 
 /* donations module*/
 .donations-wrapper li {
-  padding-bottom: 0.7rem;
+  padding: 0.3rem 0;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   background: #f5f5f5; }
 
 .donations-wrapper p {
-  margin-top: 0; }
+  margin-top: 0;
+  padding: 0 8rem 2rem 2rem; }
 
 .donations-wrapper h3 {
-  display: inline; }
+  display: inline;
+  padding: 2rem 0 0 2rem; }
 
 .donations-wrapper .avatar {
   border: 2px solid #ffffff;
