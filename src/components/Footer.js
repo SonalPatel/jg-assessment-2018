@@ -20,7 +20,7 @@ class Footer extends React.Component {
                 href="https://www.justgiving.com/crowdfunding"
               >
                 start crowdfunding for cause you believe in
-              </a>.{" "}
+              </a>
             </p>
           </footer>
         </div>

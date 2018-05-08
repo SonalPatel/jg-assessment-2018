@@ -1,10 +1,8 @@
-// create a px to rems mixin
 @mixin font-size($px, $base: 16px) {
   font-size: $px;
   font-size: ($px / $base) * 1rem;
 }
 
-// create a rounded corners mixin
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -12,7 +10,6 @@
   border-radius: $radius;
 }
 
-//create any special effects mixins if time at the end
 @mixin layered-paper {
   background: #fbfcfc; //#eee;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
