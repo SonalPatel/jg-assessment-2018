@@ -33,7 +33,7 @@ class Header extends React.Component {
                 {
                   <a className="jg-logo" href="https://home.justgiving.com/">
                     <img
-                      className="img-fluid"
+                      className="jg-logo"
                       src={jgLogo}
                       alt="JustGiving home"
                     />

@@ -1,0 +1,43 @@
+@import "_colors.scss";
+
+/* 
+@import "_typography.scss";
+@import "_mixins.scss";
+*/
+.off-screen {
+  height: 1px;
+  left: -50000px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+
+a.skip-link:active,
+a.skip-link:focus,
+a.skip-link:hover {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+/* to do - style up elements here links, headings, lists etc */
+
+footer {
+  padding: 1rem;
+  background: $color-white;
+  border-top: 1px solid $color-light-grey;
+  text-align: right;
+}
