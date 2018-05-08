@@ -48,7 +48,11 @@ class CharityInfo extends React.Component {
       return <div>Error: {error.message} </div>;
     } else if (!isLoaded) {
       //if its true that is has loaded then show the text loading
-      return <div className="brand-primary">Loading charity content...</div>; //if time add an animated spinner
+      return (
+        <div className="brand-primary">
+          <p className="loading-spinner">Loading charity content...</p>
+        </div>
+      ); //if time add an animated spinner
     } else {
       // returns the content from the api and then iterates over each object to allow me access to the info
       //(charityContent is my varibale name for my empty array );
