@@ -25,7 +25,25 @@ class Header extends React.Component {
           </li>
         </ul>
 
-        <p className="testing-sass"> The header goes here</p>
+        {/* TODO -  IF TIME RE-DO logo  AS SIZE  NEEDS TO SCALE */}
+        <div className="flex-grid">
+          <div className="col">
+            <header>
+              <div className="jg-logo-container">
+                {
+                  <a className="jg-logo" href="https://home.justgiving.com/">
+                    <img
+                      className="img-fluid"
+                      src={jgLogo}
+                      alt="JustGiving home"
+                    />
+                    <span className="off-screen">JustGiving Home</span>
+                  </a>
+                }
+              </div>
+            </header>
+          </div>
+        </div>
       </div>
     );
   }

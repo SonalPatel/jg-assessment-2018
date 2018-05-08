@@ -34,3 +34,31 @@
   width: 40%;
   border: 1px solid pink;
 }
+
+/* smaller screens*/ /* TO TEST THIS SONAL */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-two-thirds {
+    display: block;
+    .col-one,
+    .col-two {
+      width: 100%;
+      margin: 0 0 2rem 0;
+    }
+  }
+  h1 {
+    display: block;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-grid {
+  margin: 0 0 1em 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */

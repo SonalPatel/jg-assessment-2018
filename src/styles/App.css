@@ -29,6 +29,36 @@ li > ol,
 li > ul {
   margin-bottom: 0; }
 
+.brand-primary {
+  color: #ac29b5; }
+
+.brand-secondary {
+  color: #ff6200; }
+
+.brand-charity {
+  color: #61a534; }
+
+.color-light-grey {
+  color: #cccccc; }
+
+.color-dark-grey {
+  color: #737373; }
+
+.brand-primary {
+  color: #ac29b5; }
+
+.brand-secondary {
+  color: #ff6200; }
+
+.brand-charity {
+  color: #61a534; }
+
+.color-light-grey {
+  color: #cccccc; }
+
+.color-dark-grey {
+  color: #737373; }
+
 /* very simple flexbox grid */
 .flex-grid {
   display: flex;
@@ -59,6 +89,29 @@ li > ul {
   width: 40%;
   border: 1px solid pink; }
 
+/* smaller screens*/
+/* TO TEST THIS SONAL */
+/* ------------------------------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-two-thirds {
+    display: block; }
+    .flex-grid .col-one,
+    .flex-grid .col-two,
+    .flex-grid-two-thirds .col-one,
+    .flex-grid-two-thirds .col-two {
+      width: 100%;
+      margin: 0 0 2rem 0; }
+  h1 {
+    display: block; } }
+
+* {
+  box-sizing: border-box; }
+
+.flex-grid {
+  margin: 0 0 1em 0; }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
 /* I would usually make this my import file,
   but as this is one page I have skipped this step. 
   i would also set my breakpoints and grid BETTER for a larger project. Here i have opted to use flexbox for speed and simplicity.
