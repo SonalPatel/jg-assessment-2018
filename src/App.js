@@ -11,7 +11,7 @@ class App extends Component {
       <div>
         <Header />
 
-        <p className="testing-sass">MY JG APP</p>
+        <WrapContainer />
 
         <Footer />
       </div>
