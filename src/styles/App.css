@@ -29,6 +29,36 @@ li > ol,
 li > ul {
   margin-bottom: 0; }
 
+/* very simple flexbox grid */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap; }
+
+.flex-grid .col {
+  flex: 1;
+  background: #ffffff; }
+
+.flex-grid-two-unequal {
+  background: #ffffff;
+  padding: 1em;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  overflow: auto;
+  word-wrap: break-word;
+  margin-bottom: 2rem; }
+
+.flex-grid-two-unequal {
+  display: flex;
+  justify-content: space-between; }
+
+.col-one {
+  width: 55%;
+  border: 1px solid blue; }
+
+.col-two {
+  width: 40%;
+  border: 1px solid pink; }
+
 /* I would usually make this my import file,
   but as this is one page I have skipped this step. 
   i would also set my breakpoints and grid BETTER for a larger project. Here i have opted to use flexbox for speed and simplicity.
