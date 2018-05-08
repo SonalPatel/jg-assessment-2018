@@ -15,7 +15,12 @@ class Donations extends React.Component {
   componentDidMount() {
     // check with console.log("did mount");
 
-    fetch("https://api.justgiving.com/8b28a350/v1/charity/13441/donations")
+    fetch("https://api.justgiving.com/8b28a350/v1/charity/13441/donations", {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      }
+    })
       .then(res => res.json()) //fetching the json, (then is like a callback function)
 
       //update the state with the info from the api (state is like a holding place setState is a react method)
