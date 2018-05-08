@@ -180,23 +180,28 @@ a.links {
 .animate-link:hover::after {
   width: 100%; }
 
-.loading-spinner {
+/*loading*/
+.lds-circle {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
+  width: 24px;
+  height: 24px; }
+
+.lds-circle:after {
+  content: " ";
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 1px;
   border-radius: 50%;
-  border-top-color: #fff;
-  animation: spin 1s ease-in-out infinite;
-  -webkit-animation: spin 1s ease-in-out infinite; }
+  border: 3px solid #ac29b5;
+  border-color: #ac29b5 transparent #ac29b5 ttransparent;
+  animation: lds-dual-ring 1.2s linear infinite; }
 
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg); } }
-
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg); } }
+@keyframes lds-circle {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 footer {
   padding: 1rem;
@@ -419,10 +424,3 @@ header {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
   /* The third layer shadow */
   padding: 1rem; }
-
-/* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
