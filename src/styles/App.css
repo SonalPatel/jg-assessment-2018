@@ -58,11 +58,6 @@ body {
   color: #262626;
   background: #f9f9f9; }
 
-/* font-size variables*/
-/*Resizing font sizes at different resolutions (mobile first)*/
-html {
-  font-size: 1rem; }
-
 @media screen and (min-width: 480px) {
   html {
     font-size: 1rem;
@@ -225,7 +220,6 @@ footer {
 .color-dark-grey {
   color: #737373; }
 
-/* very simple flexbox grid */
 .flex-grid {
   display: flex;
   flex-wrap: wrap; }
@@ -255,12 +249,10 @@ footer {
   background: #f5f5f5; }
 
 .col-one {
-  width: 55%;
-  border: 1px solid blue; }
+  width: 55%; }
 
 .col-two {
-  width: 40%;
-  border: 1px solid pink; }
+  width: 40%; }
 
 .col-one-small {
   width: 70%;
@@ -308,11 +300,6 @@ body {
   color: #262626;
   background: #f9f9f9; }
 
-/* font-size variables*/
-/*Resizing font sizes at different resolutions (mobile first)*/
-html {
-  font-size: 1rem; }
-
 @media screen and (min-width: 480px) {
   html {
     font-size: 1rem;
@@ -337,10 +324,6 @@ html {
     font-size: 24px;
     font-size: 1.5rem; } }
 
-/* I would usually make this my import file,
-  but as this is one page I have skipped this step. 
-  i would also set my breakpoints and grid BETTER for a larger project. Here i have opted to use flexbox for speed and simplicity.
-*/
 header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   padding: 0.3rem 0.3rem 0.3rem 2rem; }
@@ -360,8 +343,8 @@ header {
 
 /*charity module */
 .content-info {
-  /* TO DO - style up content here p tags, links, list and h1, make the logo responsive, line up the content with the start og the JG logo if time. 
-   for loading text - if time add an animated spinner *******************  */ }
+  /* TO DO -  the logo responsive, line up the content with the start og the JG logo if time. 
+   *******************  */ }
   .content-info .charity-wrapper {
     display: inline-block;
     margin-bottom: 3rem; }

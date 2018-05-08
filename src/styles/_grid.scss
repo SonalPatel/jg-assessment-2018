@@ -1,6 +1,5 @@
 @import "_colors.scss";
 
-/* very simple flexbox grid */
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +22,6 @@
   margin-right: 2.5rem;
   padding: 1em;
   margin-bottom: 2rem;
-
   @extend %flex-grid-two;
 }
 .flex-grid-two-unequal-small {
@@ -36,22 +34,18 @@
 }
 .col-one {
   width: 55%;
-  border: 1px solid blue;
 }
 
 .col-two {
   width: 40%;
-  border: 1px solid pink;
 }
 .col-one-small {
   width: 70%;
-
   background: $color-white-smoke;
 }
 
 .col-two-small {
   width: 15%;
-
   background: $color-white-smoke;
 }
 
