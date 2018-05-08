@@ -90,6 +90,10 @@ a.skip-link:hover {
   overflow: visible; }
 
 /* to do - style up elements here links, headings, lists etc */
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
 footer {
   padding: 1rem;
   background: #ffffff;
@@ -169,11 +173,32 @@ footer {
   i would also set my breakpoints and grid BETTER for a larger project. Here i have opted to use flexbox for speed and simplicity.
 */
 header {
-  padding: 0.3rem 0.3rem 0.3rem 2rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  padding: 0.3rem 0.3rem 0.3rem 2rem; }
   header .jg-logo-container {
-    width: 65px;
+    border: 1px solid blue;
+    display: inline-block;
     height: 65px;
+    width: 65px;
+    line-height: 45px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;
+    vertical-align: middle;
+    zoom: 1; }
+    header .jg-logo-container .jg-logo {
+      height: auto;
+      width: 100%; }
+
+/*charity module */
+.content-info .charity-wrapper {
+  border: 1px solid pink;
+  display: inline-block;
+  margin-bottom: 3rem; }
+  .content-info .charity-wrapper .charity-logo-wrap {
+    border: 1px solid blue;
+    width: 250px;
+    height: 100px;
     vertical-align: middle;
     display: inline-block;
     zoom: 1;
@@ -181,10 +206,24 @@ header {
     word-spacing: normal;
     text-rendering: auto;
     line-height: 45px;
-    border: 1px solid red; }
-    header .jg-logo-container .jg-logo {
+    margin-right: 2rem; }
+    .content-info .charity-wrapper .charity-logo-wrap .charity-logo {
       width: 100%;
       height: auto; }
+
+.content-info h1 {
+  border: 1px solid aqua;
+  text-align: center;
+  display: inline; }
+
+.content-info ul {
+  margin-top: 1.5rem;
+  border: 1px solid red; }
+
+.content-info li {
+  color: #737373;
+  font-size: 1rem;
+  padding-top: 0.5rem; }
 
 /* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
 @keyframes App-logo-spin {
