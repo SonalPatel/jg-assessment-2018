@@ -70,7 +70,7 @@ class Donations extends React.Component {
           </h2>
           <ul>
             {content.donations.map(donation => (
-              <li className="x" key={donation.name}>
+              <li className="layered-paper" key={donation.name}>
                 <div className="flex-grid-two-unequal-small">
                   <div className="col-one-small">
                     <h3> {donation.donorDisplayName} </h3>

@@ -1,9 +1,7 @@
 @import "_colors.scss";
-
-/* 
 @import "_typography.scss";
 @import "_mixins.scss";
-*/
+
 .off-screen {
   height: 1px;
   left: -50000px;
@@ -38,6 +36,60 @@ a.skip-link:hover {
   max-width: 100%;
   //max-height: 100%;
   height: auto;
+}
+h1 {
+  color: $color-nero;
+  display: inline;
+  // @include font-size($font-size-l);
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+h2 {
+  color: $color-nero;
+  padding-bottom: 1.2rem;
+  @include font-size($font-size-m);
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+h3 {
+  color: $color-nero;
+  padding-bottom: 0.5rem;
+  @include font-size($font-size-s);
+  font-size: 1rem;
+  font-weight: 100;
+}
+h4,
+h5,
+h6 {
+  color: $color-nero;
+  /*font-size: 1.6em;*/
+  font-weight: 100;
+}
+
+p {
+  margin: 0.5rem 0;
+  font-weight: 100;
+}
+
+a {
+  text-decoration: underline;
+  color: $color-brand-primary;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+a.brand {
+  color: $color-brand-primary;
+}
+
+a.links {
+  color: $color-empress;
 }
 
 footer {

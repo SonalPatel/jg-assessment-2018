@@ -55,15 +55,18 @@
   background: $color-white-smoke;
 }
 
-/* smaller screens*/ /* TO TEST THIS SONAL */
+/* smaller screens TO TEST THIS SONAL  TO DO MORE MEDIA QUERIES  ********************************* */
 /* ------------------------------------------------------------------------------------------------------------------ */
 
 @media screen and (max-width: 400px) {
   .flex-grid,
-  .flex-grid-two-thirds {
+  .flex-grid-two-unequal,
+  .flex-grid-two-unequal-small {
     display: block;
     .col-one,
-    .col-two {
+    .col-two,
+    .col-one-small,
+    .col-two-small {
       width: 100%;
       margin: 0 0 2rem 0;
     }

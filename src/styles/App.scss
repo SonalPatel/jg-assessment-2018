@@ -40,7 +40,7 @@ header {
 
     .charity-logo-wrap {
       border: 1px solid blue;
-      width: 250px; // TO DO make this responsive
+      width: 250px; // TO DO make this responsive ********************
       height: 100px;
       vertical-align: middle;
       display: inline-block;
@@ -72,25 +72,32 @@ header {
     padding-top: 0.5rem;
   }
   /* TO DO - style up content here p tags, links, list and h1, make the logo responsive, line up the content with the start og the JG logo if time. 
-   for loading text - if time add an animated spinner*/
+   for loading text - if time add an animated spinner *******************  */
 }
 
 /* donations module*/
 .donations-wrapper {
-  li {
-    padding: 0.3rem 0;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    background: $color-white-smoke;
-    //@include border-radius(5px);
+  background: aqua;
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+      padding: 0.3rem 0;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      background: $color-white-smoke;
+      @include border-radius(5px);
+    }
   }
   p {
     margin-top: 0;
-    padding: 0 8rem 2rem 2rem;
+    //padding: 0 8rem 2rem 2rem;
   }
   h3 {
     display: inline;
-    padding: 2rem 0 0 2rem;
+    padding: 2rem 0 0 0;
+    font-weight: 300;
   }
 
   .avatar {
@@ -98,6 +105,9 @@ header {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+  }
+  .layered-paper {
+    @include layered-paper;
   }
 }
 
