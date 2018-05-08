@@ -1,12 +1,7 @@
 html {
   cursor: default;
-  /* 1 */
-  -ms-overflow-style: scrollbar;
-  /* 2 */ }
+  -ms-overflow-style: scrollbar; }
 
-/**
-   * A very simple reset.
-   */
 body,
 h1,
 h2,

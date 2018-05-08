@@ -1,11 +1,8 @@
+// I would usually add normalise here for prod.
 html {
-  cursor: default; /* 1 */
-  -ms-overflow-style: scrollbar; /* 2 */
+  cursor: default;
+  -ms-overflow-style: scrollbar;
 }
-
-/**
-   * A very simple reset.
-   */
 
 body,
 h1,
