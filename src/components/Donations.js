@@ -78,7 +78,8 @@ class Donations extends React.Component {
                   {donation.message}{" "}
                 </p>
                 <p>
-                  {donation.currencyCode} <strong>{donation.amount}</strong>{" "}
+                  <span class="fas fa-pound-sign" /> {donation.currencyCode}{" "}
+                  <strong>{donation.amount}</strong>{" "}
                 </p>
               </li>
             ))}

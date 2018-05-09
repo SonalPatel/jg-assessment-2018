@@ -5,12 +5,12 @@ import Donations from "../components/Donations.js";
 class WrapContainer extends React.Component {
   render() {
     return (
-      <div className="flex-grid-two-unequal">
-        <div className="col-one">
+      <div className="container">
+        <div className="brand-banner">
           <CharityInfo />
         </div>
 
-        <div className="col-two">
+        <div className="flex-grid">
           <Donations />
         </div>
       </div>

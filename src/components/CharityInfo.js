@@ -59,31 +59,33 @@ class CharityInfo extends React.Component {
               />
             </div>
 
-            <h1>{charityContent.name}</h1>
+            <h1 className="off-screen">{charityContent.name}</h1>
           </div>
+          <div className="charity-info">
+            <h2>
+              {charityContent.name} {charityContent.impactStatementWhat} to{" "}
+              {charityContent.impactStatementWhy}
+            </h2>
 
-          <h2>
-            {charityContent.name} {charityContent.impactStatementWhat} to{" "}
-            {charityContent.impactStatementWhy}
-          </h2>
-
-          <p>{charityContent.description}</p>
+            <p>{charityContent.description}</p>
+            <a href={charityContent.profilePageUrl}>
+              Find out more about {charityContent.name}{" "}
+            </a>
+          </div>
 
           <aside role="complementary">
             <ul className="list-items">
-              <li>Contact us at: {charityContent.emailAddress}</li>
               <li>
-                {charityContent.name} registered charity number:{" "}
-                {charityContent.id}
+                <strong>Contact us at: </strong>
+                <a href={`mailto${charityContent.emailAddress}`}>
+                  {charityContent.emailAddress}
+                </a>{" "}
               </li>
               <li>
-                {" "}
-                <a
-                  className="animate-link"
-                  href={charityContent.profilePageUrl}
-                >
-                  Find out more about {charityContent.name}{" "}
-                </a>
+                <strong>
+                  {charityContent.name} registered charity number:
+                </strong>{" "}
+                {charityContent.id}
               </li>
             </ul>
           </aside>

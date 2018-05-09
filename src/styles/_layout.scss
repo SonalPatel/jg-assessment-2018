@@ -1,0 +1,226 @@
+header {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  padding: 0.3rem 0.3rem 0.3rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1;
+  .jg-logo-container {
+    display: inline-block;
+    height: 65px; // TO DO make this responsive
+    width: 65px;
+    line-height: 45px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;
+    vertical-align: middle;
+    zoom: 1;
+    .jg-logo {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+
+/*charity module */
+.content-info {
+  position: relative;
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 29px 0 29px;
+    border-color: rgba(69, 168, 17, 0.7) transparent transparent transparent;
+    bottom: -30px;
+    left: 42vw;
+    @media screen and (min-width: 768px) {
+      left: 50vw;
+    }
+  }
+  .charity-wrapper {
+    display: inline-block;
+    margin-bottom: 3rem;
+
+    .charity-logo-wrap {
+      width: 250px; // TO DO make this responsive ********************
+      height: 100px;
+      vertical-align: middle;
+      display: inline-block;
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      text-rendering: auto;
+      line-height: 45px;
+      margin-right: 2rem;
+      .charity-logo {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  h1 {
+    border: 1px solid aqua;
+    text-align: center;
+    display: inline;
+  }
+  ul {
+    margin-top: 100px;
+    background-color: rgba(69, 168, 17, 0.7);
+    padding: 1.5rem 0;
+  }
+  li {
+    color: $color-white;
+    font-size: $font-size-s;
+    line-height: 1.2;
+    width: 75%;
+    margin: 0 auto;
+    a {
+      color: $color-white;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  /* TO DO - style up content here p tags, links, list and h1, make the logo responsive, line up the content with the start og the JG logo if time. 
+    for loading text - if time add an animated spinner ******************* */
+
+  .charity-info {
+    color: $color-white;
+    font-size: $font-size-l;
+    @media screen and (min-width: 768px) {
+      font-size: $font-size-xl;
+    }
+    h2 {
+      color: $color-white;
+      font-size: $font-size-l;
+      @media screen and (min-width: 768px) {
+        font-size: $font-size-xl;
+      }
+    }
+    a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: $color-brand-charity;
+      padding: 0.5rem;
+      background: #ffffff;
+      font-size: $font-size-l;
+      transition: font-size 0.3s;
+      @include border-radius(3px);
+      &:hover {
+        color: $color-black;
+      }
+    }
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+/* donations module*/
+.donations-wrapper {
+  background: $color-black;
+  margin-top: -48px;
+  width: 100%;
+  @media screen and (min-width: 1024px) {
+    margin-top: -16px;
+  }
+  .fas {
+    font-size: 2rem;
+    color: $color-brand-charity;
+  }
+  .fas,
+  .far {
+    font-size: 1rem;
+    color: $color-brand-charity;
+  }
+  ul {
+    margin-left: 20px;
+    padding-left: 0;
+    display: block;
+    @media screen and (min-width: 1024px) {
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    li {
+      margin-right: 20px;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      background: $color-white-smoke;
+      @include border-radius(5px);
+      flex: none;
+      @media screen and (min-width: 1024px) {
+        flex: 1;
+      }
+    }
+  }
+  p {
+    margin-top: 0;
+    line-height: 1.4;
+  }
+  h2 {
+    text-align: center;
+    font-size: $font-size-xl;
+    padding-top: 6rem;
+    color: $color-white;
+    @media screen and (min-width: 1024px) {
+      padding-top: 3rem;
+    }
+  }
+  h3 {
+    display: inline;
+    padding: 2rem 0 0 0;
+    font-weight: 400;
+    font-size: $font-size-l;
+  }
+
+  .avatar {
+    border: 2px solid $color-white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+.layered-paper {
+  @include layered-paper;
+}
+/* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  margin-top: 75px;
+  width: 100%;
+}
+
+.brand-banner {
+  @include background("../oxfam-banner.jpg");
+  background-size: cover;
+}

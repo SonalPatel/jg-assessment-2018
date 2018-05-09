@@ -6,17 +6,17 @@
 }
 .flex-grid .col {
   flex: 1;
-  background: $color-white;
 }
 
 %flex-grid-two {
   background: $color-white;
-  overflow: auto;
+  //overflow: auto;
   word-wrap: break-word;
   justify-content: space-between;
 }
 
 .flex-grid-two-unequal {
+  display: -ms-flexbox;
   display: flex;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -25,6 +25,7 @@
   @extend %flex-grid-two;
 }
 .flex-grid-two-unequal-small {
+  display: -ms-flexbox;
   display: flex;
   margin-left: 0;
   margin-right: 0;
@@ -49,10 +50,7 @@
   background: $color-white-smoke;
 }
 
-/* smaller screens TO TEST THIS SONAL  TO DO MORE MEDIA QUERIES  ********************************* */
-/* ------------------------------------------------------------------------------------------------------------------ */
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .flex-grid,
   .flex-grid-two-unequal,
   .flex-grid-two-unequal-small {

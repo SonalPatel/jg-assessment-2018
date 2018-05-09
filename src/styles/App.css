@@ -28,7 +28,7 @@ li > ul {
   color: #ff6200; }
 
 .brand-charity {
-  color: #61a534; }
+  color: #45a811; }
 
 .color-light-grey {
   color: #cccccc; }
@@ -43,7 +43,7 @@ li > ul {
   color: #ff6200; }
 
 .brand-charity {
-  color: #61a534; }
+  color: #45a811; }
 
 .color-light-grey {
   color: #cccccc; }
@@ -53,34 +53,28 @@ li > ul {
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 100;
   color: #262626;
   background: #f9f9f9; }
 
+html {
+  font-size: 1rem; }
+
 @media screen and (min-width: 480px) {
   html {
-    font-size: 1rem;
-    font-size: 14px;
-    font-size: 0.875rem; } }
+    font-size: 1rem; } }
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 11rem;
-    font-size: 16px;
     font-size: 1rem; } }
 
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 12rem;
-    font-size: 16px;
     font-size: 1rem; } }
 
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 12rem;
-    font-size: 24px;
-    font-size: 1.5rem; } }
+    font-size: 1rem; } }
 
 .off-screen {
   height: 1px;
@@ -122,24 +116,19 @@ h1 {
 h2 {
   color: #262626;
   padding-bottom: 1.2rem;
-  font-size: 16px;
   font-size: 1rem;
-  font-size: 1.2rem;
   font-weight: 100; }
 
 h3 {
   color: #262626;
   padding-bottom: 0.5rem;
-  font-size: 14px;
   font-size: 0.875rem;
-  font-size: 1rem;
   font-weight: 100; }
 
 h4,
 h5,
 h6 {
   color: #262626;
-  /*font-size: 1.6em;*/
   font-weight: 100; }
 
 p {
@@ -201,9 +190,9 @@ a.links {
 
 footer {
   padding: 1rem;
-  background: #ffffff;
-  border-top: 1px solid #cccccc;
-  text-align: right; }
+  text-align: center; }
+  footer a {
+    color: #ac29b5; }
 
 .brand-primary {
   color: #ac29b5; }
@@ -212,7 +201,7 @@ footer {
   color: #ff6200; }
 
 .brand-charity {
-  color: #61a534; }
+  color: #45a811; }
 
 .color-light-grey {
   color: #cccccc; }
@@ -225,16 +214,15 @@ footer {
   flex-wrap: wrap; }
 
 .flex-grid .col {
-  flex: 1;
-  background: #ffffff; }
+  flex: 1; }
 
 .flex-grid-two-unequal, .flex-grid-two-unequal-small {
   background: #ffffff;
-  overflow: auto;
   word-wrap: break-word;
   justify-content: space-between; }
 
 .flex-grid-two-unequal {
+  display: -ms-flexbox;
   display: flex;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -242,6 +230,7 @@ footer {
   margin-bottom: 2rem; }
 
 .flex-grid-two-unequal-small {
+  display: -ms-flexbox;
   display: flex;
   margin-left: 0;
   margin-right: 0;
@@ -262,9 +251,7 @@ footer {
   width: 15%;
   background: #f5f5f5; }
 
-/* smaller screens TO TEST THIS SONAL  TO DO MORE MEDIA QUERIES  ********************************* */
-/* ------------------------------------------------------------------------------------------------------------------ */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .flex-grid,
   .flex-grid-two-unequal,
   .flex-grid-two-unequal-small {
@@ -295,38 +282,37 @@ footer {
 /* ------------------------------------------------------------------------------------------------------------------ */
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 100;
   color: #262626;
   background: #f9f9f9; }
 
+html {
+  font-size: 1rem; }
+
 @media screen and (min-width: 480px) {
   html {
-    font-size: 1rem;
-    font-size: 14px;
-    font-size: 0.875rem; } }
+    font-size: 1rem; } }
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 11rem;
-    font-size: 16px;
     font-size: 1rem; } }
 
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 12rem;
-    font-size: 16px;
     font-size: 1rem; } }
 
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 12rem;
-    font-size: 24px;
-    font-size: 1.5rem; } }
+    font-size: 1rem; } }
 
 header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-  padding: 0.3rem 0.3rem 0.3rem 2rem; }
+  padding: 0.3rem 0.3rem 0.3rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1; }
   header .jg-logo-container {
     display: inline-block;
     height: 65px;
@@ -343,8 +329,30 @@ header {
 
 /*charity module */
 .content-info {
-  /* TO DO -  the logo responsive, line up the content with the start og the JG logo if time. 
-   *******************  */ }
+  position: relative;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+  /* TO DO - style up content here p tags, links, list and h1, make the logo responsive, line up the content with the start og the JG logo if time. 
+    for loading text - if time add an animated spinner ******************* */ }
+  .content-info::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 29px 0 29px;
+    border-color: rgba(69, 168, 17, 0.7) transparent transparent transparent;
+    bottom: -30px;
+    left: 42vw; }
+    @media screen and (min-width: 768px) {
+      .content-info::after {
+        left: 50vw; } }
   .content-info .charity-wrapper {
     display: inline-block;
     margin-bottom: 3rem; }
@@ -361,47 +369,132 @@ header {
       margin-right: 2rem; }
       .content-info .charity-wrapper .charity-logo-wrap .charity-logo {
         width: 100%;
-        height: auto; }
+        height: auto;
+        margin-top: 2rem; }
   .content-info h1 {
     border: 1px solid aqua;
     text-align: center;
     display: inline; }
   .content-info ul {
-    margin-top: 1.5rem; }
+    margin-top: 100px;
+    background-color: rgba(69, 168, 17, 0.7);
+    padding: 1.5rem 0; }
   .content-info li {
-    color: #737373;
-    font-size: 1rem;
-    padding-top: 0.5rem; }
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    width: 75%;
+    margin: 0 auto; }
+    .content-info li a {
+      color: #ffffff; }
+      .content-info li a:hover {
+        text-decoration: none; }
+  .content-info .charity-info {
+    color: #ffffff;
+    font-size: 1.125rem;
+    width: 75%;
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      .content-info .charity-info {
+        font-size: 1.5rem; } }
+    .content-info .charity-info h2 {
+      color: #ffffff;
+      font-size: 1.125rem; }
+      @media screen and (min-width: 768px) {
+        .content-info .charity-info h2 {
+          font-size: 1.5rem; } }
+    .content-info .charity-info a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #45a811;
+      padding: 0.5rem;
+      background: #ffffff;
+      font-size: 1.125rem;
+      transition: font-size 0.3s;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px; }
+      .content-info .charity-info a:hover {
+        color: #000000; }
 
 /* donations module*/
-.donations-wrapper ul {
-  margin-left: 0;
-  padding-left: 0; }
-  .donations-wrapper ul li {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    background: #f5f5f5;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px; }
-
-.donations-wrapper p {
-  margin-top: 0; }
-
-.donations-wrapper h3 {
-  display: inline;
-  padding: 2rem 0 0 0;
-  font-weight: 500; }
-
-.donations-wrapper .avatar {
-  border: 2px solid #ffffff;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%; }
+.donations-wrapper {
+  background: #000000;
+  margin-top: -48px;
+  width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .donations-wrapper {
+      margin-top: -16px; } }
+  .donations-wrapper .fas {
+    font-size: 2rem;
+    color: #45a811; }
+  .donations-wrapper .fas,
+  .donations-wrapper .far {
+    font-size: 1rem;
+    color: #45a811; }
+  .donations-wrapper ul {
+    margin-left: 20px;
+    padding-left: 0;
+    display: block; }
+    @media screen and (min-width: 1024px) {
+      .donations-wrapper ul {
+        display: -ms-flexbox;
+        display: flex; } }
+    .donations-wrapper ul li {
+      margin-right: 20px;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      background: #f5f5f5;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      flex: none; }
+      @media screen and (min-width: 1024px) {
+        .donations-wrapper ul li {
+          flex: 1; } }
+  .donations-wrapper p {
+    margin-top: 0;
+    line-height: 1.4; }
+  .donations-wrapper h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 6rem;
+    color: #ffffff; }
+    @media screen and (min-width: 1024px) {
+      .donations-wrapper h2 {
+        padding-top: 3rem; } }
+  .donations-wrapper h3 {
+    display: inline;
+    padding: 2rem 0 0 0;
+    font-weight: 400;
+    font-size: 1.125rem; }
+  .donations-wrapper .avatar {
+    border: 2px solid #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; }
 
 .layered-paper {
   background: #fbfcfc;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
   /* The third layer shadow */
   padding: 1rem; }
+
+/* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.container {
+  margin-top: 75px;
+  width: 100%; }
+
+.brand-banner {
+  background-image: url("../oxfam-banner.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover; }
