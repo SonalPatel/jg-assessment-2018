@@ -24,9 +24,6 @@ li > ul {
 .brand-primary {
   color: #ac29b5; }
 
-.brand-secondary {
-  color: #ff6200; }
-
 .brand-charity {
   color: #45a811; }
 
@@ -38,9 +35,6 @@ li > ul {
 
 .brand-primary {
   color: #ac29b5; }
-
-.brand-secondary {
-  color: #ff6200; }
 
 .brand-charity {
   color: #45a811; }
@@ -102,7 +96,6 @@ a.skip-link:hover {
   height: auto;
   overflow: visible; }
 
-/* to do - FIX FLEX images, style up elements here links, headings, lists etc */
 .img-fluid {
   max-width: 100%;
   height: auto; }
@@ -165,7 +158,6 @@ a.links {
 .animate-link:hover::after {
   width: 100%; }
 
-/*loading*/
 .lds-circle {
   display: inline-block;
   width: 24px;
@@ -196,9 +188,6 @@ footer {
 
 .brand-primary {
   color: #ac29b5; }
-
-.brand-secondary {
-  color: #ff6200; }
 
 .brand-charity {
   color: #45a811; }
@@ -279,7 +268,6 @@ footer {
 .flex-grid {
   margin: 0 0 1em 0; }
 
-/* ------------------------------------------------------------------------------------------------------------------ */
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 100;
@@ -337,9 +325,7 @@ header {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
-  /* IE6-9 */
-  /* TO DO - style up content here p tags, links, list and h1, make the logo responsive, line up the content with the start og the JG logo if time. 
-    for loading text - if time add an animated spinner ******************* */ }
+  /* IE6-9 */ }
   .content-info::after {
     position: absolute;
     content: "";
@@ -372,7 +358,6 @@ header {
         height: auto;
         margin-top: 2rem; }
   .content-info h1 {
-    border: 1px solid aqua;
     text-align: center;
     display: inline; }
   .content-info ul {
@@ -381,7 +366,7 @@ header {
     padding: 1.5rem 0; }
   .content-info li {
     color: #ffffff;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.2;
     width: 75%;
     margin: 0 auto; }
@@ -418,7 +403,6 @@ header {
       .content-info .charity-info a:hover {
         color: #000000; }
 
-/* donations module*/
 .donations-wrapper {
   background: #000000;
   margin-top: -48px;
@@ -481,13 +465,6 @@ header {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
   /* The third layer shadow */
   padding: 1rem; }
-
-/* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
 
 .container {
   margin-top: 75px;

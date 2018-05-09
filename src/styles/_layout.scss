@@ -61,7 +61,7 @@ header {
     margin-bottom: 3rem;
 
     .charity-logo-wrap {
-      width: 250px; // TO DO make this responsive ********************
+      width: 250px;
       height: 100px;
       vertical-align: middle;
       display: inline-block;
@@ -80,7 +80,6 @@ header {
   }
 
   h1 {
-    border: 1px solid aqua;
     text-align: center;
     display: inline;
   }
@@ -91,7 +90,7 @@ header {
   }
   li {
     color: $color-white;
-    font-size: $font-size-s;
+    font-size: $font-size-m;
     line-height: 1.2;
     width: 75%;
     margin: 0 auto;
@@ -102,9 +101,6 @@ header {
       }
     }
   }
-
-  /* TO DO - style up content here p tags, links, list and h1, make the logo responsive, line up the content with the start og the JG logo if time. 
-    for loading text - if time add an animated spinner ******************* */
 
   .charity-info {
     color: $color-white;
@@ -137,7 +133,6 @@ header {
   }
 }
 
-/* donations module*/
 .donations-wrapper {
   background: $color-black;
   margin-top: -48px;
@@ -205,16 +200,7 @@ header {
 .layered-paper {
   @include layered-paper;
 }
-/* ---------- TO REMOVE WHAT IS NOT REQ'D----------------*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .container {
   margin-top: 75px;
   width: 100%;
