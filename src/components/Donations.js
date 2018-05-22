@@ -1,6 +1,6 @@
 import React from "react";
 import { getCharityDonationsById } from "./../helper/Api";
-//settings and state (using this.state for the API)
+//settings and state (using this.state for the API) //****** EXPLAIN setState********
 class Donations extends React.Component {
   constructor(props) {
     super(props);
@@ -11,9 +11,8 @@ class Donations extends React.Component {
     };
   }
 
-  //when the component has mounted (page has loaded) we want to perform our ajax call using Fetch which is the modern way to make an ajax call
-  //(can check with console.log("did mount");)
-  // the headers were required as the api was xml: if its not json then make it json.
+  //when the page has loaded we want to perform our ajax call using Fetch which is the modern way to make an ajax call
+  //can check with console.log("did mount");
   componentDidMount() {
     // call my re-useable function and manually enter the charity ID  (cruk: 2357, oxfam:13441, bhf: 183092 ).
     getCharityDonationsById(2357)
@@ -23,6 +22,7 @@ class Donations extends React.Component {
       .then(
         result => {
           this.setState({
+            //****** EXPLAIN setState********
             isLoaded: true,
             content: result
           });
@@ -53,7 +53,7 @@ class Donations extends React.Component {
       );
     }
     {
-      // returns the content from the api and then iterates over each object to allow me access to the info ****** MAP AND KEY - ********
+      // returns the content from the api and then iterates over each object to allow me access to the info  using ****** MAP AND KEY - ********
       //map: mapping over the data that we’ve pulled. This is like a for loop.********
       //key: https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2 .******** TO DO .********
       //(content is my varible name for the instance of each index defined in the settings at the top);

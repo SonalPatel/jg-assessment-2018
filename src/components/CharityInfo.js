@@ -13,7 +13,7 @@ class CharityInfo extends React.Component {
   }
 
   //when the component has mounted (page has loaded) we want to perform our ajax call using Fetch which is the modern way to make an ajax call
-  //( // can check with console.log("did mount");)
+  //( can check with console.log("did mount");)
   // the headers were required as the api was xml: if its not json then make it json.
   componentDidMount() {
     // call my re-useable function and manually enter the charity ID  (cruk: 2357, oxfam:13441, bhf: 183092 ).
