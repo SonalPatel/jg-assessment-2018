@@ -13,10 +13,10 @@ export const getCharityById = charityId => {
 };
 
 //function for variable charity Donation ID
-export const getCharityDonationsById = donationId => {
+export const getCharityDonationsById = charityId => {
   return fetch(
     // the headers were required as the api was xml: so if its not json then make it json.
-    `https://api.justgiving.com/${AppId}/v1/charity/${donationId}/donations`,
+    `https://api.justgiving.com/${AppId}/v1/charity/${charityId}/donations`,
     {
       headers: {
         Accept: "application/json",
