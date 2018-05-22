@@ -20,9 +20,9 @@ class Donations extends React.Component {
         "Content-Type": "application/json"
       }
     })
-      //fetching the json, (.then is like a callback function)
+      //fetching the json, (.then is like a callback function)  ****** EXPLAIN********
       .then(res => res.json())
-      //update the state with the info from the api (state is like a holding place setState is a react method)
+      //update the state with the info from the api (state is like a holding place setState is a react method) ****** SETSTATE********
       .then(
         result => {
           this.setState({
@@ -56,7 +56,9 @@ class Donations extends React.Component {
       );
     }
     {
-      // returns the content from the api and then iterates over each object to allow me access to the info
+      // returns the content from the api and then iterates over each object to allow me access to the info ****** MAP AND KEY - ********
+      //map: mapping over the data that we’ve pulled. This is like a for loop.********
+      //key: https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2 .******** TO DO .********
       //(content is my varible name for the instance of each index defined in the settings at the top);
       return (
         <div className="donations-wrapper" id="latest-donations">

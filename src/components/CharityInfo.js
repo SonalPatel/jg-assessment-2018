@@ -1,4 +1,5 @@
 import React from "react";
+import { getCharityById } from "./../helper/ApiCharity";
 
 class CharityInfo extends React.Component {
   //settings and state (using this.state for the API)
@@ -15,15 +16,10 @@ class CharityInfo extends React.Component {
   //( // can check with console.log("did mount");)
   // the headers were required as the api was xml: if its not json then make it json.
   componentDidMount() {
-    fetch("https://api.justgiving.com/8b28a350/v1/charity/13441", {
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      }
-    })
-      //fetching the json, (.then is like a callback function)
+    getCharityById(18570)
+      //fetching the json, (.then is like a callback function)  ****** EXPLAIN********
       .then(res => res.json())
-      //update the state with the info from the api (state is like a holding place setState is a react method)
+      //update the state with the info from the api (state is like a holding place setState is a react method) ****** SETSTATE********
       .then(
         result => {
           this.setState({
