@@ -9,3 +9,15 @@ export const getCharityById = charityId => {
     }
   });
 };
+
+export const getCharityDonationsById = donationId => {
+  return fetch(
+    `https://api.justgiving.com/${AppId}/v1/charity/${donationId}/donations`,
+    {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      }
+    }
+  );
+};

@@ -86,7 +86,7 @@ class CharityInfo extends React.Component {
           <ul className="list-items">
             <li>
               <strong>Contact us at: </strong>
-              <a href={`mailto${charityContent.emailAddress}`}>
+              <a href={`mailto:${charityContent.emailAddress}`}>
                 {charityContent.emailAddress}
               </a>{" "}
             </li>

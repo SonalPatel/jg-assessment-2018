@@ -1,4 +1,5 @@
 import React from "react";
+import { getCharityDonationsById } from "./../helper/Api";
 //settings and state (using this.state for the API)
 class Donations extends React.Component {
   constructor(props) {
@@ -11,15 +12,11 @@ class Donations extends React.Component {
   }
 
   //when the component has mounted (page has loaded) we want to perform our ajax call using Fetch which is the modern way to make an ajax call
-  //( // can check with console.log("did mount");)
+  //(can check with console.log("did mount");)
   // the headers were required as the api was xml: if its not json then make it json.
   componentDidMount() {
-    fetch("https://api.justgiving.com/8b28a350/v1/charity/13441/donations", {
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      }
-    })
+    // call my re-useable function and manually enter the charity ID  (cruk: 2357, oxfam:13441, bhf: 183092 ).
+    getCharityDonationsById(2357)
       //fetching the json, (.then is like a callback function)  ****** EXPLAIN********
       .then(res => res.json())
       //update the state with the info from the api (state is like a holding place setState is a react method) ****** SETSTATE********
