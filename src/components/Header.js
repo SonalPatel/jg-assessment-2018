@@ -25,7 +25,6 @@ class Header extends React.Component {
           </li>
         </ul>
 
-        {/* TODO -  IF TIME RE-DO logo  AS SIZE  NEEDS TO SCALE */}
         <div className="flex-grid">
           <div className="col">
             <header>

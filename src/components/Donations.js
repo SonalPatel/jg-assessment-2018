@@ -1,15 +1,18 @@
 import React from "react";
-
+//settings and state (using this.state for the API)
 class Donations extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       error: null,
       isLoaded: false,
-      content: []
+      content: [] //my donations empty array
     };
   }
 
+  //when the component has mounted (page has loaded) we want to perform our ajax call using Fetch which is the modern way to make an ajax call
+  //( // can check with console.log("did mount");)
+  // the headers were required as the api was xml: if its not json then make it json.
   componentDidMount() {
     fetch("https://api.justgiving.com/8b28a350/v1/charity/13441/donations", {
       headers: {
@@ -17,7 +20,9 @@ class Donations extends React.Component {
         "Content-Type": "application/json"
       }
     })
+      //fetching the json, (.then is like a callback function)
       .then(res => res.json())
+      //update the state with the info from the api (state is like a holding place setState is a react method)
       .then(
         result => {
           this.setState({
@@ -25,7 +30,7 @@ class Donations extends React.Component {
             content: result
           });
         },
-
+        //error function just in case (error is a built in react property)
         error => {
           this.setState({
             isLoaded: true,
@@ -36,17 +41,23 @@ class Donations extends React.Component {
   }
   render() {
     const { error, isLoaded, content } = this.state;
-
+    //check if error then display an error message {error.message} is part of react
+    //check if the content has loaded and set the state
     if (error) {
       return <div>Error: {error.message} </div>;
-    } else if (!isLoaded) {
+    }
+    //if its true that is has loaded then show the text loading message
+    if (!isLoaded) {
       return (
         <div className="brand-primary">
           <p>Loading latest donation details...</p>
           <div className="lds-circle" />
         </div>
       );
-    } else {
+    }
+    {
+      // returns the content from the api and then iterates over each object to allow me access to the info
+      //(content is my varible name for the instance of each index defined in the settings at the top);
       return (
         <div className="donations-wrapper" id="latest-donations">
           <h2>
