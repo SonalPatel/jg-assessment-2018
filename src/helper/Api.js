@@ -1,7 +1,7 @@
 import React from "react";
 const AppId = "8b28a350"; //create the AppID into a variable as its re-used
 
-//function for variable charity ID
+//function for variable charity ID (using template literals which are string literals to allow embedded expressions eg. `string text` or `&{expression}`)
 export const getCharityById = charityId => {
   return fetch(`https://api.justgiving.com/${AppId}/v1/charity/${charityId}`, {
     // the headers were required as the api was xml: so if its not json then make it json.
